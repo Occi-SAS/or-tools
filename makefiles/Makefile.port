@@ -13,13 +13,14 @@ endif
 ifeq ("$(SYSTEM)","unix")
   OR_TOOLS_TOP ?= $(shell pwd)
   OS = $(shell uname -s)
-  ifneq ($(shell which python2.7),)
-    DETECTED_PYTHON_VERSION = 2.7
-  else
-    ifneq ($(shell which python2.6),)
-      DETECTED_PYTHON_VERSION = 2.6
-    endif
-  endif
+  #ifneq ($(shell which python2.7),)
+  #  DETECTED_PYTHON_VERSION = 2.7
+  #else
+  #  ifneq ($(shell which python2.6),)
+  #    DETECTED_PYTHON_VERSION = 2.6
+  #  endif
+  #endif
+  DETECTED_PYTHON_VERSION = 3.5
   MCS = $(shell which mcs)
   ifeq ($(OS),Linux)
     PLATFORM = LINUX

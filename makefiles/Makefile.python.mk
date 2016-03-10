@@ -2,7 +2,7 @@
 
 # Detect python3
 
-ifeq ("$(PYTHON_VERSION)","3.3")
+ifeq ("$(PYTHON_VERSION)","3.5")
   PYTHON3 = true
   SWIG_PYTHON3_FLAG=-py3
 endif

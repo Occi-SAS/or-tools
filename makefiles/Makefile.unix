@@ -36,8 +36,10 @@ CPSEP = :
 SED = sed
 
 # This is needed to find python.h
-PYTHON_INC = -I/usr/include/python$(UNIX_PYTHON_VER) -I/usr/lib/python$(UNIX_PYTHON_VER) $(ADD_PYTHON_INC)
-PYTHON_VERSION = $(UNIX_PYTHON_VER)
+#PYTHON_INC = -I/usr/include/python$(UNIX_PYTHON_VER) -I/usr/lib/python$(UNIX_PYTHON_VER) $(ADD_PYTHON_INC)
+#PYTHON_VERSION = $(UNIX_PYTHON_VER)
+PYTHON_INC = -I/home/ubuntu/miniconda3/include/python3.5m -I/home/ubuntu/miniconda3/lib/python3.5 $(ADD_PYTHON_INC)
+PYTHON_VERSION = 3.5
 # This is needed to find gflags/gflags.h
 GFLAGS_INC = -I$(UNIX_GFLAGS_DIR)/include
 # This is needed to find protocol buffers.
